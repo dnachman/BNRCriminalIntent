@@ -14,7 +14,7 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 
 /**
- * Created by dnachman on 8/24/2015.
+ * Fragment to hold crime UI
  */
 public class CrimeFragment extends Fragment {
 
