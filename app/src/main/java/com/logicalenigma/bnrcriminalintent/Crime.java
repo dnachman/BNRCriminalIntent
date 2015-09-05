@@ -10,6 +10,18 @@ public class Crime {
 
     private UUID mId;
     private String mTitle;
+    private Date mDate;
+    private boolean mSolved;
+
+    public Crime() {
+        this(UUID.randomUUID());
+    }
+
+    public Crime(UUID id) {
+        mId = id;
+        mDate = new Date();
+    }
+
 
     public Date getDate() {
         return mDate;
@@ -25,16 +37,6 @@ public class Crime {
 
     public void setSolved(boolean solved) {
         mSolved = solved;
-    }
-
-    private Date mDate;
-    private boolean mSolved;
-
-
-    public Crime() {
-        // generate unique id
-        mId = UUID.randomUUID();
-        mDate = new Date();
     }
 
     public UUID getId() {
