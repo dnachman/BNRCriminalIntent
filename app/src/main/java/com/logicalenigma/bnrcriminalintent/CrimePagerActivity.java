@@ -16,7 +16,7 @@ import java.util.UUID;
  * Copyright 2015 Logical Enigma
  * Created by dnachman on 9/3/15.
  */
-public class CrimePagerActivity extends AppCompatActivity {
+public class CrimePagerActivity extends AppCompatActivity implements CrimeFragment.Callbacks {
 
     private static final String EXTRA_CRIME_ID = "com.logicalenigma.bnrcriminalintent.crime_id";
     private ViewPager mViewPager;
@@ -59,5 +59,10 @@ public class CrimePagerActivity extends AppCompatActivity {
                 break;
             }
         }
+    }
+
+    @Override
+    public void onCrimeUpdated(Crime crime) {
+        // blank
     }
 }
